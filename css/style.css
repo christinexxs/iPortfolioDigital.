@@ -1,0 +1,202 @@
+/*Fonts Geral */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap');
+
+
+
+body {
+  font-family: "Spicy Rice", system-ui;
+  /*  sans-serif  */
+  color: #b3b3b3;
+  /*    */
+  background: #2e2e2e;
+  /*   */
+}
+
+a {
+  text-decoration: none;
+  color: #313131;
+}
+
+a:hover {
+  /*pseudo-classe*/
+  color: #808080;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Spicy Rice", system-ui;
+}
+
+/*  Cabeçalho === Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #525252;
+  /* fundo Header Vertical */
+  transition: all ease-in-out .5s;
+  z-index: 9999;
+  padding: 0 15px;
+  overflow-y: auto;
+}
+
+#header .perfil img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 3px solid #424242;
+  box-shadow: 0px 5px 15px #1a1a1a;
+}
+
+.text-light a {
+  font-family: "Spicy Rice";
+  /* font-weight: 600; Para fonts Finas */
+  color: rgb(163, 157, 157);
+  font-size: 30px;
+}
+
+.text-light a:hover {
+  color: #000000;
+  transition: all .5s;
+}
+
+#header .perfil .social-links i {
+  font-size: 22px;
+  color: #5e5e5e;
+  background: rgb(196, 196, 196);
+  border-radius: 50%;
+  margin-right: 8px;
+  text-align: center;
+  display: inline;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+#header .perfil .social-links i:hover {
+  color: rgb(0, 0, 0);
+  background: #757575;
+  transition: all 0.3s;
+}
+
+/* Fim Header  */
+#main {
+  margin-left: 300px;
+}
+
+.container,
+.container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+/* Navigation Menu */
+/* Desktop Navigation */
+.nav-menu {
+  padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+/* icones menu */
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #f1f1f1;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+  color: #2c3131;
+}
+
+/* Mobile Menu */
+.mobile-nav-toggle { 
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+
+/* Resolução Mobile */
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Hero  */
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/hero-bg.jpg) top center;
+  background-size: cover;
+}
