@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background: #149ddd;
+  background: #149ddd25;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -194,9 +194,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hero  */
-#hero {
+#hero{
   width: 100%;
   height: 100vh;
   background: url(../img/hero-bg.jpg) top center;
   background-size: cover;
+}
+#hero:before{
+    content: "";
+    background: hwb(0 58% 41% / 0.095);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+#hero .hero-container{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+#hero h1{
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    padding: 10px;
+    background: #67666634;
+
+}
+#hero p{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+#hero p span{
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #52525284;
 }
