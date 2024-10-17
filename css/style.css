@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #2c3131;
+  color: #c9d4d4;
 }
 
 /* Mobile Menu */
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 56px;
     color: #fff;
     padding: 10px;
-    background: #67666634;
+    background: #bcbcbc34;
 
 }
 #hero p{
