@@ -1,5 +1,5 @@
 /*Fonts Geral */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=c:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap');
 
 
 
@@ -232,4 +232,64 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-bottom: 3px solid #52525284;
+}
+@media (min-width: 1024px){
+  #hero{
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px){
+  #hero h1{
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+/* Seção Geral */
+
+section{
+  padding: 60px 0;
+  overflow: hidden;
+}
+.section-bg{ /* bg = Background*/
+  background: #838383;
+}
+.section-title{
+  padding: 30px;
+}
+.section-title h2{
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #e1e1e1;
+  font-family: "Spicy Rice";
+}
+.section-title h2::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+.section-title p{
+  margin-bottom: 0;
+  font-family:"" ;
+}
+/* # About*/
+.about .content h3{
+  font-weight: 700;
+  font-size: 26px;
+  color: #e1e1e1;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
