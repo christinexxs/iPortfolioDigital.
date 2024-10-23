@@ -277,6 +277,7 @@ section{
 .section-title p{
   margin-bottom: 0;
   font-family:"" ;
+ 
 }
 /* # About*/
 .about .content h3{
@@ -292,4 +293,24 @@ section{
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+}
+.about .content ul strong{
+  margin-right: 10px;
+  color: #565656;
+  font-weight: 200;
+}
+.about .content ul span{
+  color: #858585;
+  font-family: "Spicy Rice", sans-serif;
+}
+.about .content p{
+  color: #808080;
+  font-family: "Poppins";
+  font-weight: 600;
+  /* font-size ; opcional */
+}
+.about .content ul i{
+  font-size: 16px;
+  margin-right: 5px;
+  
 }
